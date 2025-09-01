@@ -31,9 +31,9 @@ try {
 } catch (error) {
   console.log("Error: " + error);
 }
-let port = process.env.PORT;
+const PORT = process.env.PORT || 4005;
 require("./routes")(app);
 
-app.listen(port, () => {
-  console.log("Server started on port " + port);
+app.listen(PORT, () => {
+  console.log("Server started on PORT " + PORT);
 });
