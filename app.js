@@ -23,6 +23,9 @@ app.use(express.urlencoded({ extended: true, limit: "5000mb" }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use(express.urlencoded({ extended: true }));
+app.get("/", (req, res) => {
+  res.send("✅ Backend is live!");
+});
 
 http.get(process.env.BASE_URL);
 try {
