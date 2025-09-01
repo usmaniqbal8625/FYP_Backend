@@ -1,11 +1,11 @@
 {
   "name": "crud-api",
   "version": "1.0.0",
-  "main": "./app.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node app.js",
-    "dev": "nodemon app.js"
+    "start": "babel-node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
