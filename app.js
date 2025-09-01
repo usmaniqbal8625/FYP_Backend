@@ -27,8 +27,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("✅ Backend is live!");
 });
+const baseURL = process.env.BASE_URL || 'http://localhost:4005';
 
-http.get(process.env.BASE_URL);
+http.get(baseURL);
 try {
   con.on("open", () => {
   });
