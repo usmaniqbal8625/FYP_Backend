@@ -41,3 +41,7 @@ require("./routes")(app);
 app.listen(PORT, () => {
   console.log("Server started on PORT " + PORT);
 });
+
+app.get("/v1", (req, res) => {
+  res.json({ message: "✅ API v1 is working!" });
+});
