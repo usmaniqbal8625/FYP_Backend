@@ -28,13 +28,13 @@ app.get("/", (req, res) => {
   res.send("✅ Backend is live!");
 });
 
-// http.get(process.env.BASE_URL);
-// try {
-//   con.on("open", () => {
-//   });
-// } catch (error) {
-//   console.log("Error: " + error);
-// }
+http.get(process.env.BASE_URL);
+try {
+  con.on("open", () => {
+  });
+} catch (error) {
+  console.log("Error: " + error);
+}
 const PORT = process.env.PORT || 4005;
 require("./routes")(app);
 
