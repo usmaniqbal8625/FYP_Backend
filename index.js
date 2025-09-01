@@ -43,6 +43,6 @@ app.listen(PORT, () => {
   console.log("Server started on PORT " + PORT);
 });
 
-app.get("/v1", (req, res) => {
+app.get("/api", (req, res) => {
   res.json({ message: "✅ API v1 is working!" });
 });
