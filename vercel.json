@@ -1,8 +1,8 @@
 {
     "version": 2,
     "routes": [
-      { "src": "/", "dest": "/api" },       // root → /api
-      { "src": "/(.*)", "dest": "/api/$1" } // everything else → /api/*
+      { "src": "/", "dest": "/api" },       
+      { "src": "/(.*)", "dest": "/api/$1" } 
     ]
   }
   
