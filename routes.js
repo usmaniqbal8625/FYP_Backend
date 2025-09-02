@@ -1,10 +1,10 @@
 "use strict";
 
 module.exports = (app) => {
-  app.use("/auth", require("./api/auth"));
-  app.use("/users", require("./api/user"));
-  app.use("/laptop", require("./api/laptop"));
-  app.use("/review", require("./api/review"));
-  app.use("/cart", require("./api/cart"));
-  app.use("/complaint", require("./api/complaint"));
+  app.use("/auth", require("./src/auth"));
+  app.use("/users", require("./src/user"));
+  app.use("/laptop", require("./src/laptop"));
+  app.use("/review", require("./src/review"));
+  app.use("/cart", require("./src/cart"));
+  app.use("/complaint", require("./src/complaint"));
 };
