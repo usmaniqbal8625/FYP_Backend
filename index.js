@@ -52,7 +52,7 @@ app.listen(port, () => {
 require("./routes")(app);
 
 app.get("/", (req, res) => {
-  res.status(200).send("Hello! Padel project backend is running....");
+  res.status(200).send("Hello! backend is running....");
 });
 
 // http.get(baseURL);
